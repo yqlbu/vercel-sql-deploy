@@ -6,3 +6,4 @@ top=$(cd $(dirname $0); pwd)
 python3 -m venv ${top}/venv
 
 ${top}/venv/bin/pip3 install -r requirements.txt
+${top}/venv/bin/datasette install datasette-publish-vercel
